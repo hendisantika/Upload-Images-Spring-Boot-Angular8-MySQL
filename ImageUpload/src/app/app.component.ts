@@ -10,6 +10,7 @@ export class AppComponent {
   constructor(private httpClient: HttpClient) { }
 
   selectedFile: File;
+  imgURL: any;
   retrievedImage: any;
   base64Data: any;
   retrieveResponse: any;
