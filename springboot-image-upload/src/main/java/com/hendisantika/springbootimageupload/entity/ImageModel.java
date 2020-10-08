@@ -41,4 +41,15 @@ public class ImageModel {
     //which is more than the default length for picByte column
     @Column(name = "picByte", length = 1000)
     private byte[] picByte;
+
+    public ImageModel() {
+        super();
+    }
+
+    public ImageModel(String name, String type, byte[] picByte) {
+        this.name = name;
+        this.type = type;
+        this.picByte = picByte;
+    }
+
 }
