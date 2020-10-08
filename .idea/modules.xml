@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Upload-Images-Spring-Boot-Angular8-MySQL.iml" filepath="$PROJECT_DIR$/.idea/Upload-Images-Spring-Boot-Angular8-MySQL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-image-upload/springboot-image-upload.iml" filepath="$PROJECT_DIR$/springboot-image-upload/springboot-image-upload.iml" />
+    </modules>
+  </component>
+</project>
