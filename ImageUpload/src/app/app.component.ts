@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpEventType} from "@angular/common/http";
 
 @Component({
   selector: 'app-root',
@@ -40,7 +40,18 @@ export class AppComponent {
           }
         }
       );
+  }
 
-
+  //Gets called when the user clicks on retieve image button to get the image from back end
+  getImage() {
+    //Make a call to Sprinf Boot to get the Image Bytes.
+    this.httpClient.get('http://localhost:8080/image/get/' + this.imageName)
+      .subscribe(
+        res => {
+          this.retrieveResponse = res;
+          this.base64Data = this.retrieveResponse.picByte;
+          this.retrievedImage = 'data:image/jpeg;base64,' + this.base64Data;
+        }
+      );
   }
 }
